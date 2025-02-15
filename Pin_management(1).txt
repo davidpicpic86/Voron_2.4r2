@@ -1,0 +1,44 @@
+Parts					MCU						Connecteur								Détails des pins							configuré
+																Step_Pin	dir_pin	enable_pin	uart_pin (CS)	endstop_pin	
+Moteur A				Octopus			OK		Driver 1 J4		PG0			PG1		!PF15		PD11			PG9					Hardware\Axis - stepper_x.cfg
+Moteur B				Octopus			OK		Driver 0 J3		PF13		!PF12	PF14		PC4				PB6 de l'EBB		Hardware\Axis - stepper_y.cfg
+									
+Moteur Z0				Octopus			OK		Driver 2-1 J?	PF11		!PG3	!PG5		PC6				PG10				Hardware\Axis - stepper_z.cfg
+Moteur Z1				Octopus			OK		Driver 3 J6		PG4			PC1		!PA0		PC7				PG10				Hardware\Axis - stepper_z.cfg
+Moteur Z2				Octopus			OK		Driver 4 J10	PF9			!PF10	!PG2		PF2				PG10				Hardware\Axis - stepper_z.cfg
+Moteur Z3				Octopus			OK		Driver 5 J11	PC13		PF0		!PF1		PE4				PG10				Hardware\Axis - stepper_z.cfg
+Extrudeur				EBB 36 v1.2		OK		E-motor			PD0			PD1		PD2			PA15								Hardware - extruder.cfg
+									
+Résistance toolhead		EBB 36 v1.2		OK		Hotend0			PB13																Hardware - extruder.cfg
+									
+Fan Hotend (bas)		EBB 36 v1.2		OK		FAN2			PA1																	Hardware - fan.cfg
+Fan Duct (haut)			EBB 36 v1.2		OK		FAN1			PA0																	Hardware - fan.cfg
+NeverMore				Octopus			OK		J52				PD12																Hardware - fan.cfg
+Desk/Skirts Fan In		Octopus			OK		J53				PD13																Hardware - fan.cfg
+Desk Fan Out																														
+									
+Thermistance Bed		Octopus			OK		J44				PF3																	Hardware - bed.cfg
+Thermistance Hotend		EBB 36 v1.2		OK		TH0				PA3																	Hardware - extruder.cfg
+Thermistance Chamber	Octopus			OK		J46				PF5																	Hardware - sensor.cfg
+Thermistance EBB		EBB																											Hardware - sensor.cfg
+Thermistance carto		scanner																										Hardware - sensor.cfg
+Thermistance Rpi		Rpi																											Hardware - sensor.cfg
+
+Endstop X				EBB 36 v1.1		OK		Endstop			PB6 et GND															conf/steppers.cfg
+Endstop Y				Octopus			OK		J29				PG9																	conf/steppers.cfg
+Endstop Z				Octopus			OK		J31				PG10			klipper octopus										conf/steppers.cfg
+									
+Kickly Prob																															Non utilisé=>cartographer
+									
+Bed Out					Octopus			OK		J67				PA1																	Hardware - bed.cfg
+									
+Filament Runout			Octopus			OK		J33				PG11																Hardware\Axis - filament_runout.cfg
+									
+LED	Chamber				Octopus			OK		J37				PB0																	Hardware - led.cfg
+LED SB					EBB 36 v1.2		OK		PD3																					Mods\Leds - stealthburner_leds.cfg
+									
+EBB36					Octopus			OK		RJ11			CANH CANL															
+ADXL1346				EBB 36 v1.2		OK																							Software/Calibration - input_shaper.cfg
+									
+BLOBIFIER Servo			Octopus			OK		J27				PG6																	Mods/Blobifier - blobifier_hw.cfg
+BLOBIFIER Bucket		Octopus			OK		J30				^PG13																Mods/Blobifier - blobifier_hw.cfg
